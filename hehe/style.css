@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #20f07e; 
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://www.transparenttextures.com/patterns/snow.png'); 
+}
+.gift-wrapper {
+    text-align: center;
+}
+
+.gift-box {
+    width: 200px;
+    height: 200px;
+    background-color: #c42e3b;
+    border: 3px solid #d2a35a;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.gift-ribbon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 180px;
+    height: 30px;
+    background-color: #f1c40f;
+    border-radius: 5px;
+}
+
+.gift-content {
+    font-size: 50px;
+    transition: opacity 1s ease;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#confettiCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.santa-container {
+    position: absolute;
+    top: auto; 
+    z-index: 10;
+    display: none;
+    width: 200px;
+    text-align: center;
+}
+
+#santaGIF {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    opacity: 90%;
+}
